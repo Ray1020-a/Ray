@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+  
+h1 {
+    color: #003399;
+}
+  
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+    font-weight: bold;
+}
+  
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+}
+  
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 20px 0;
+}
+
+.table-wrapper {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    width: auto;
+    overflow: hidden;
+}
+
+table.alt {
+    border-collapse: separate;
+}
+table.alt tbody tr td {
+    border: solid 2px #efefef;
+    border-left-width: 0;
+    border-top-width: 0;
+}
+
+table.alt tbody tr td:first-child {
+    border-left-width: 2px;
+}
+
+table.alt tbody tr:first-child td {
+    border-top-width: 2px;
+}
+
+table.alt thead {
+    border-bottom: 0;
+}
+
+table.alt tfoot {
+    border-top: 0;
+}
+
+li{
+    text-align:left
+}
+
+td{
+    text-align: center; 
+    vertical-align: middle; 
+    font-size: larger;
+    padding: 2em;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.icons {
+    font-size: 50px;
+}
+
+.icons a {
+    color: gray;
+}
+
+.icons .fa-instagram:hover {
+    color: #FF359A;
+}
+
+.icons .fa-youtube:hover {
+    color: #EA0000;
+}
+
+.icons .fa-github:hover {
+    color: #272727;
+}
+
+.icons .fa-discord:hover {
+    color: #6A6AFF;
+}
+        
+.icons .fa-telegram:hover {
+    color: #2894FF;
+}
