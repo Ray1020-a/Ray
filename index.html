@@ -17,7 +17,7 @@
     </div>
   </nav>
   <div class="container">
-    <img src="assets/logo.jpg" alt="My Profile Picture">
+    <img src="assets/logo.jpg" class="logoimg" alt="My Profile Picture">
     <h1>Hello, I'm Ray</h1>
     <span><i class="fa fa-location-arrow" aria-hidden="true"></i></span><span class="px-2">Taiwan,New Taipei</span>
     <span><i class="fas fa-network-wired" aria-hidden="true"></i></span><span class="px-2">Network Operator of AS214841</span>
@@ -56,12 +56,12 @@
         <tr>
           <td>參與過的活動/課程</td>
           <td>
-          <li>COSCUP 2023 (會眾)</li>
-          <li>WordCamp Taiwan 2023 (會眾)</li>
-          <li>AIS3 Junior 2023 (學員)</li>
-          <li>SITCON 2024 (會眾)</li>
-          <li>2024/6/1 一日資訊體驗營台北場 (學員)</li>
-          <li>COSCUP 2024 (場務組-組員)</li>
+          <li><a class="mlink" onclick="openModal(1)">COSCUP 2023</a> (會眾)</li>
+          <li><a class="mlink" onclick="openModal(2)">WordCamp Taiwan 2023</a> (會眾)</li>
+          <li><a class="mlink" onclick="openModal(3)">AIS3 Junior 2023</a> (學員)</li>
+          <li><a class="mlink" onclick="openModal(4)">SITCON 2024</a> (會眾)</li>
+          <li><a class="mlink" onclick="openModal(5)">2024/6/1 一日資訊體驗營台北場</a> (學員)</li>
+          <li><a class="mlink" onclick="openModal(6)">COSCUP 2024</a> (場務組-組員)</li>
           </td>
         </tr>
         <tr>
@@ -98,6 +98,68 @@
         <p> Copyright 2024 &copy; 叡叡個人簡介<br><a href="https://github.com/Ray1020-a">By.叡叡</a></p>
     </div>
 </footer>
+
+<div id="modal1" class="modal-background">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal(1)">✖</span>
+      <div class="banner"><img class="top-img" src="./assets/logo/coscup.png"></div>
+      <h2>COSCUP 2023</h2>
+      <p>COSCUP 是由台灣開放原始碼社群聯合推動的年度研討會，起源於 2006 年，是台灣自由軟體運動 (FOSSM) 重要的推動者之一。</p>
+      <p>官網: <a href="https://coscup.org/2023/" target="_blank">https://coscup.org/2023/</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal-background">
+  <div class="modal-content"> 
+      <span class="close-btn" onclick="closeModal(2)">✖</span>
+      <div class="banner"><img class="top-img" src="./assets/logo/wordcamp.tw.23.png"></div>
+      <h2>WordCamp Taiwan 2023</h2>
+      <p>所有喜歡 WordPress 的朋友們，大家一起參與台灣的 WordCamp Taiwan 2023 盛會！</p>
+      <p>官網: <a href="https://taiwan.wordcamp.org/2023/" target="_blank">https://taiwan.wordcamp.org/2023/</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal-background">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal(3)">✖</span>
+      <div class="banner"><img class="top-img" src="./assets/logo/ais3.junior.png "></div>
+      <h2>AIS3 Junior 2023</h2>
+      <p>促進高中職生對資安學習的興趣，提升學生的資安素養與資安基礎技術能力，進而發掘與培養資安潛力人才。</p>
+      <p>官網: <a href="https://ais3.org/junior/junior2023/" target="_blank">https://ais3.org/junior/junior2023/</a>
+  </div>
+</div>
+
+<div id="modal4" class="modal-background">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal(4)">✖</span>
+      <div class="banner"><img class="top-img" src="./assets/logo/sitcon.png"></div>
+      <h2>SITCON 2024</h2>
+      <p>以學生為本、由學生自發舉辦，長期投身學生資訊教育與推廣開源精神，希望引領更多學子踏入資訊的殿堂，更冀望所有對資訊有興趣的學生，能夠在年會裏齊聚一堂，彼此激盪、傳承、啟發，達到「學以致用、教學相長」的實際展現。</p>
+      <p>官網: <a href="https://sitcon.org/2024/" target="_blank">https://sitcon.org/2024/</a>
+  </div>
+</div>
+
+<div id="modal5" class="modal-background">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal(5)">✖</span>
+      <div class="banner"><img class="top-img" src="./assets/logo/tilea.tw.tp.24.jpg"></div>
+      <h2>一日資訊體驗營-台北場</h2>
+      <p>#網路維運 #網路安全 #資訊安全 #程式設計 #探索資工 #資訊科技</p>
+      <p>Instagram: <a href="https://www.instagram.com/tilea.tw/" target="_blank">https://www.instagram.com/tilea.tw/</a>
+  </div>
+</div>
+
+<div id="modal6" class="modal-background">
+  <div class="modal-content">
+      <span class="close-btn" onclick="closeModal(6)">✖</span>
+      <div class="banner"><img class="top-img" src="./assets/logo/coscup.png"></div>
+      <h2>COSCUP 2024</h2>
+      <p>COSCUP 是由台灣開放原始碼社群聯合推動的年度研討會，起源於 2006 年，是台灣自由軟體運動 (FOSSM) 重要的推動者之一。</p>
+      <p>官網: <a href="https://coscup.org/2024/" target="_blank">https://coscup.org/2024/</a>
+  </div>
+</div>
+
+<script src="./assets/openModal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
