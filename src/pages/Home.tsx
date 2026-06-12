@@ -26,6 +26,11 @@ const Activities_Course = [
     time: '2026',
   },
   {
+    title: 'COMPUTEX 2026',
+    identity: 'Attendee',
+    time: '2026',
+  },
+  {
     title: 'SITCON 2026',
     identity: 'Administration Team — Staff Member',
     time: '2026',
