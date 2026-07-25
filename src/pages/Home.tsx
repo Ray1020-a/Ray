@@ -8,7 +8,8 @@ import {
   FaYoutube,
   FaDiscord,
 } from 'react-icons/fa'
-import { MdSchool } from 'react-icons/md'
+import { MdSchool, MdComputer } from 'react-icons/md'
+import { useState, useEffect } from 'react';
 
 // ── Edit these ──────────────────────────────────────────────
 const WORK_EXPERIENCE = [
@@ -95,6 +96,36 @@ const SOCIALS = [
   { icon: FaYoutube,       label: 'YouTube',   href: 'https://www.youtube.com/@twcowray' },
   { icon: FaDiscord,       label: 'Discord',   href: 'https://discord.com/users/743991161189826592' },
 ]
+
+const RotatingText = () => {
+  const items = [
+    { text: '社團合作', strike: false },
+    { text: '社團交流', strike: false },
+    { text: '活動合辦', strike: false }
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [items.length]);
+
+  const current = items[currentIndex];
+
+  return (
+    <span style={{ display: 'inline-block', minWidth: '2em', textAlign: 'center' }}>
+      {current.strike ? (
+        <s style={{ opacity: 0.6 }}>{current.text}</s>
+      ) : (
+        <span>{current.text}</span>
+      )}
+    </span>
+  );
+};
 // ─────────────────────────────────────────────────────────────
 
 const ease = [0.22, 1, 0.36, 1] as const
@@ -126,6 +157,19 @@ export default function Home() {
 
             <motion.p className="home-tags" {...fadeUp(0.16)}>
               <p><MdSchool style={{ display: 'inline', marginRight: '0.3em', verticalAlign: 'middle' }} />Taipei Digital Experimental High School</p>
+              <p style={{ display: 'flex', alignItems: 'center', gap: '0.5em', flexWrap: 'wrap' }}>
+                <MdComputer style={{ display: 'inline', marginRight: '0.3em', verticalAlign: 'middle' }} />
+                <a 
+                  href="https://tscsc.tschoolsu.org/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  資研社
+                </a>
+                <span>社長</span>
+                <RotatingText />
+                <span style={{ opacity: 0.85 }}>歡迎聯繫</span>
+              </p>
               {TAGS.join(' ')}
             </motion.p>
 
