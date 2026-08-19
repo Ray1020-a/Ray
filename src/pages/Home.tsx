@@ -22,8 +22,18 @@ const WORK_EXPERIENCE = [
 
 const Activities_Course = [
   {
+    title: 'HITCON 2026',
+    identity: 'Attendee',
+    time: '2026',
+  },
+  {
     title: 'COSCUP 2026',
     identity: 'Streaming Team — Staff Member',
+    time: '2026',
+  },
+  {
+    title: 'AIS3 Junior 2026',
+    identity: 'Participant',
     time: '2026',
   },
   {
@@ -86,7 +96,7 @@ const Activities_Course = [
 const NAME = 'LaiRay'
 const TAGS = ['#Student', '#Learning', '#AS214841']
 const BIO =
-  "Hi, I’m LaiRay. I’m currently a first-year high school student from New Taipei City. I’m interested in learning and experimenting with anything related to the field of technology, including both hardware and software. Since 2023, I’ve been participating in in-person events and courses to expand my knowledge and experience."
+  "Hi, I’m LaiRay. I’m currently a second-year high school student from New Taipei City. I’m interested in learning and experimenting with anything related to the field of technology, including both hardware and software. Since 2023, I’ve been participating in in-person events and courses to expand my knowledge and experience."
 
 const SOCIALS = [
   { icon: FaEnvelope,      label: 'Email',     href: 'mailto:me@ray-tw.com' },
